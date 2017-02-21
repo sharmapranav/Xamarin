@@ -7,7 +7,8 @@
   <StackLayout x:Name="stackLayout">
     <Button Text="Show Interstitial" 
             Clicked="Show_Interstitial"
-            BackgroundColor="Gray"/>    
+            BackgroundColor="Silver"
+			Margin="0,50,0,0"/>    
     <Label Text="XAML Ad Banner"/>
     <Ad:AdBanner Size="Standardbanner"/>
   </StackLayout>
