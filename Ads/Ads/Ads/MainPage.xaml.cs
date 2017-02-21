@@ -9,9 +9,26 @@ namespace Ads
 {
     public partial class MainPage : ContentPage
     {
+        IAdInterstitial adInterstitial;
+
         public MainPage()
         {
             InitializeComponent();
+
+            var label = new Label();
+            label.Text = "C# Ad Banner";
+            stackLayout.Children.Add(label);
+
+            var adBanner = new AdBanner();
+            adBanner.Size = "MediumRectangle";
+            stackLayout.Children.Add(adBanner);
+
+            adInterstitial = DependencyService.Get<IAdInterstitial>();
+        }
+
+        void Show_Interstitial(object sender, EventArgs e)
+        {
+            adInterstitial.ShowAd();
         }
     }
 }

@@ -2,10 +2,13 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Ads"
-             x:Class="Ads.MainPage">
-
-  <Label Text="Welcome to Xamarin Forms!"
-           VerticalOptions="Center"
-           HorizontalOptions="Center" />
-
+             x:Class="Ads.MainPage"
+             xmlns:Ad="clr-namespace:Ads;assembly=Ads">
+  <StackLayout x:Name="stackLayout">
+    <Button Text="Show Interstitial" 
+            Clicked="Show_Interstitial"
+            BackgroundColor="Gray"/>    
+    <Label Text="XAML Ad Banner"/>
+    <Ad:AdBanner Size="Standardbanner"/>
+  </StackLayout>
 </ContentPage>
