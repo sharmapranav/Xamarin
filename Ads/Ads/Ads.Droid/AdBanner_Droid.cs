@@ -43,6 +43,7 @@ namespace Ads.Droid
                         break;
                 }
 
+                // TODO: change this id to your admob id
                 adView.AdUnitId = "ca-app-pub-3940256099942544/6300978111";
 
                 var requestbuilder = new AdRequest.Builder();

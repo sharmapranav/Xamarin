@@ -12,11 +12,13 @@ namespace Ads.Droid
         public AdInterstitial_Droid()
         {
             interstitialAd = new InterstitialAd(Android.App.Application.Context);
+
+            // TODO: change this id to your admob id
             interstitialAd.AdUnitId = "ca-app-pub-3940256099942544/1033173712";
             LoadAd();
         }
 
-        public void LoadAd()
+        void LoadAd()
         {
             var requestbuilder = new AdRequest.Builder();
             interstitialAd.LoadAd(requestbuilder.Build());

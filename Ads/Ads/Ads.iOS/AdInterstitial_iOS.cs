@@ -19,6 +19,7 @@ namespace Ads.iOS
 
         void LoadAd()
         {
+            // TODO: change this id to your admob id
             interstitial = new Interstitial("ca-app-pub-3940256099942544/4411468910");
 
             var request = Request.GetDefaultRequest();

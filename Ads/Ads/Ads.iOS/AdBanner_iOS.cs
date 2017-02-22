@@ -45,6 +45,7 @@ namespace Ads.iOS
                         break;
                 }
 
+                // TODO: change this id to your admob id
                 bannerView.AdUnitID = "ca-app-pub-3940256099942544/2934735716";
                 
                 foreach (UIWindow uiWindow in UIApplication.SharedApplication.Windows)

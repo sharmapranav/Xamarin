@@ -51,6 +51,7 @@ namespace Ads.UWP
                         break;
                 }
 
+                // TODO: change these ids to your windows ad ids
                 if (AnalyticsInfo.VersionInfo.DeviceFamily == "Windows.Mobile")
                 {
                     bannerView.ApplicationId = "3f83fe91-d6be-434d-a0ae-7351c5a997f1";

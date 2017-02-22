@@ -23,6 +23,7 @@ namespace Ads.UWP
         {
             interstitialAd = new InterstitialAd();
 
+            // TODO: change these ids to your windows ad ids
             if (AnalyticsInfo.VersionInfo.DeviceFamily == "Windows.Mobile")
             {
                 applicationID = "d25517cb-12d4-4699-8bdc-52040c712cab";
