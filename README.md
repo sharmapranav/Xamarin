@@ -27,8 +27,7 @@ iOS and Android use Google's AdMob as an ad provider while Windows(UWP) uses Mic
 ### AdBanner
 ``` C#
     var adBanner = new AdBanner();
-    adBanner.Size = "MediumRectangle";
-    // "Standardbanner" ,"LargeBanner", "MediumRectangle", "FullBanner", "Leaderboard", "SmartBannerPortrait"
+    adBanner.Size = AdBanner.Sizes.MediumRectangle;
 ```
 ### AdInterstitial
 ``` C#

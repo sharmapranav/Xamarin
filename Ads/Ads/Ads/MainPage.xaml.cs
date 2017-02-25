@@ -20,7 +20,7 @@ namespace Ads
             stackLayout.Children.Add(label);
 
             var adBanner = new AdBanner();
-            adBanner.Size = "MediumRectangle";
+            adBanner.Size = AdBanner.Sizes.MediumRectangle;
             stackLayout.Children.Add(adBanner);
 
             adInterstitial = DependencyService.Get<IAdInterstitial>();

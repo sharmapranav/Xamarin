@@ -9,6 +9,7 @@ namespace Ads
 {
     public class AdBanner : View
     {
-        public string Size { get; set; }
+        public enum Sizes { Standardbanner, LargeBanner, MediumRectangle, FullBanner, Leaderboard, SmartBannerPortrait} 
+        public Sizes Size { get; set; }
     }
 }

@@ -22,22 +22,22 @@ namespace Ads.iOS
 
                 switch ((Element as AdBanner).Size)
                 {
-                    case "Standardbanner":
+                    case AdBanner.Sizes.Standardbanner:
                         bannerView = new BannerView(AdSizeCons.Banner, new CGPoint(0, 0));
                         break;
-                    case "LargeBanner":
+                    case AdBanner.Sizes.LargeBanner:
                         bannerView = new BannerView(AdSizeCons.LargeBanner, new CGPoint(0, 0));
                         break;
-                    case "MediumRectangle":
+                    case AdBanner.Sizes.MediumRectangle:
                         bannerView = new BannerView(AdSizeCons.MediumRectangle, new CGPoint(0, 0));
                         break;
-                    case "FullBanner":
+                    case AdBanner.Sizes.FullBanner:
                         bannerView = new BannerView(AdSizeCons.FullBanner, new CGPoint(0, 0));
                         break;
-                    case "Leaderboard":
+                    case AdBanner.Sizes.Leaderboard:
                         bannerView = new BannerView(AdSizeCons.Leaderboard, new CGPoint(0, 0));
                         break;
-                    case "SmartBannerPortrait":
+                    case AdBanner.Sizes.SmartBannerPortrait:
                         bannerView = new BannerView(AdSizeCons.SmartBannerPortrait, new CGPoint(0, 0));
                         break;
                     default:

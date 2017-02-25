@@ -20,22 +20,22 @@ namespace Ads.Droid
 
                 switch ((Element as AdBanner).Size)
                 {
-                    case "Standardbanner":
+                    case AdBanner.Sizes.Standardbanner:
                         adView.AdSize = AdSize.Banner;
                         break;
-                    case "LargeBanner":
+                    case AdBanner.Sizes.LargeBanner:
                         adView.AdSize = AdSize.LargeBanner;
                         break;
-                    case "MediumRectangle":
+                    case AdBanner.Sizes.MediumRectangle:
                         adView.AdSize = AdSize.MediumRectangle;
                         break;
-                    case "FullBanner":
+                    case AdBanner.Sizes.FullBanner:
                         adView.AdSize = AdSize.FullBanner;
                         break;
-                    case "Leaderboard":
+                    case AdBanner.Sizes.Leaderboard:
                         adView.AdSize = AdSize.Leaderboard;
                         break;
-                    case "SmartBannerPortrait":
+                    case AdBanner.Sizes.SmartBannerPortrait:
                         adView.AdSize = AdSize.SmartBanner;
                         break;
                     default:

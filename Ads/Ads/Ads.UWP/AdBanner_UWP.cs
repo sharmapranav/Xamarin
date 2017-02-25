@@ -21,27 +21,27 @@ namespace Ads.UWP
 
                 switch ((Element as AdBanner).Size)
                 {
-                    case "Standardbanner":
+                    case AdBanner.Sizes.Standardbanner:
                         bannerView.Width = 320;
                         bannerView.Height = 50;
                         break;
-                    case "LargeBanner":
+                    case AdBanner.Sizes.LargeBanner:
                         bannerView.Width = 320;
                         bannerView.Height = 50;
                         break;
-                    case "MediumRectangle":
+                    case AdBanner.Sizes.MediumRectangle:
                         bannerView.Width = 300;
                         bannerView.Height = 250;
                         break;
-                    case "FullBanner":
+                    case AdBanner.Sizes.FullBanner:
                         bannerView.Width = 480;
                         bannerView.Height = 80;
                         break;
-                    case "Leaderboard":
+                    case AdBanner.Sizes.Leaderboard:
                         bannerView.Width = 728;
                         bannerView.Height = 90;
                         break;
-                    case "SmartBannerPortrait":
+                    case AdBanner.Sizes.SmartBannerPortrait:
                         bannerView.Width = 320;
                         bannerView.Height = 50;
                         break;
