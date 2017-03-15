@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Taxonomic_Information.SearchPage">
+    <StackLayout Margin="15">
+        <Grid x:Name="grid">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+        <Button Text="Search" Clicked="Search_Clicked"/>
+        <ActivityIndicator x:Name="activityIndicator" IsVisible="False"/>
+        <ScrollView>
+            <Label x:Name="output"/>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

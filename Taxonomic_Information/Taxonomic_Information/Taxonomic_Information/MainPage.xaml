@@ -4,8 +4,30 @@
              xmlns:local="clr-namespace:Taxonomic_Information"
              x:Class="Taxonomic_Information.MainPage">
 
-  <Label Text="Welcome to Xamarin Forms!"
-           VerticalOptions="Center"
-           HorizontalOptions="Center" />
+    <ListView x:Name="listView" 
+              CachingStrategy="RecycleElement"
+              HasUnevenRows="true"
+              SeparatorVisibility="None"
+              GroupDisplayBinding = "{Binding apiGroup}"
+              IsGroupingEnabled="true" 
+              ItemTapped="listView_ItemTapped"
+              Margin="15,15,15,50">
 
+        <ListView.Header>
+            <Button Text="Sort Alphabetically" Clicked="Sort_Clicked"/>
+        </ListView.Header>
+        
+        <ListView.GroupHeaderTemplate>
+            <DataTemplate>
+                <TextCell Text="{Binding apiGroup}"/>
+            </DataTemplate>
+        </ListView.GroupHeaderTemplate>
+
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <TextCell Text="{Binding apiName}"/>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+
+    </ListView>
 </ContentPage>
