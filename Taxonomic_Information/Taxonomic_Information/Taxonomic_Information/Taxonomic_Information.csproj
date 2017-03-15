@@ -38,10 +38,14 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="RetrieveInformationByTSNFunctions.cs" />
+    <Compile Include="HierararchyFunctions.cs" />
+    <Compile Include="LSIDFunctions.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="APIModel.cs" />
+    <Compile Include="MetaInformationFunctions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SearchFunctions.cs" />
     <Compile Include="WebService.cs" />
