@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Taxonomic_Information
 {
+    /// <summary>
+    /// All API descriptions and documentation can be accessed at https://www.itis.gov/ws_description.html
+    /// </summary>
     class LSIDFunctions
     {
         public async Task<string> GetLSIDFromTSN(string itisTSN)

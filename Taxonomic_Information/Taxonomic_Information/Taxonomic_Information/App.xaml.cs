@@ -8,6 +8,9 @@ using Xamarin.Forms.Xaml;
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Taxonomic_Information
 {
+    /// <summary>
+    /// All API descriptions and documentation can be accessed at https://www.itis.gov/ws_description.html
+    /// </summary>
     public partial class App : Application
     {
         public App()

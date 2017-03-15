@@ -147,7 +147,6 @@ namespace Taxonomic_Information
                 case "Get TSNs By Vernacular Language":
                     return await searchFunctions.GetTSNsByVernacularLanguage(searchKey);
             }
-
             return null;
         }
 
@@ -206,7 +205,6 @@ namespace Taxonomic_Information
                 case "Get Unacceptability Reason from TSN":
                     return await retrieveInformationByTSNFunctions.GetUnacceptabilityReasonFromTSN(itisTSN);
             }
-
             return null;
         }
 
