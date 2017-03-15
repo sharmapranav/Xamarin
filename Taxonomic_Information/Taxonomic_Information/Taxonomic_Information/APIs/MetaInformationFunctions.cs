@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Taxonomic_Information
 {
+    /// <summary>
+    /// All API descriptions and documentation can be accessed at https://www.itis.gov/ws_description.html
+    /// </summary>
     class MetaInformationFunctions
     {
         public async Task<string> GetCredibilityRatings()
