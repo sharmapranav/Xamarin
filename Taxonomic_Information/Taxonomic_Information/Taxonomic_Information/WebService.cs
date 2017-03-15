@@ -18,7 +18,6 @@ namespace Taxonomic_Information
         WebService()
         {
             httpClient = new HttpClient();
-            httpClient.MaxResponseContentBufferSize = 256000;
         }
 
         public static WebService Instance
