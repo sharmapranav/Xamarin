@@ -4,8 +4,6 @@
 * [Ads](#ads)
 * [Taxonomic_Information](#taxonomic_information)
 
-<div id='ads'/>
-
 ## Ads
 This sample Xamarin.Forms project demonstrates how to implement banner ads of different sizes and interstitial ads on iOS, Android and Windows(UWP) apps.
 
@@ -31,18 +29,16 @@ iOS and Android use Google's AdMob as an ad provider while Windows(UWP) uses Mic
     * Implement `IAdInterstitial_UWP.cs`
     * Change ApplicationId and AdUnitId id for real ads
 
-### AdBanner
+#### AdBanner
 ``` C#
-    var adBanner = new AdBanner();
-    adBanner.Size = AdBanner.Sizes.MediumRectangle;
+var adBanner = new AdBanner();
+adBanner.Size = AdBanner.Sizes.MediumRectangle;
 ```
 ### AdInterstitial
 ``` C#
 IAdInterstitial adInterstitial = DependencyService.Get<IAdInterstitial>();
 adInterstitial.ShowAd();
 ```
-
-<div id='taxonomic_information'/>
 
 ## Taxonomic_Information
 This sample Xamarin.Forms project searches and retrieves data from ITIS by accessing web service APIs provided by ITIS.
