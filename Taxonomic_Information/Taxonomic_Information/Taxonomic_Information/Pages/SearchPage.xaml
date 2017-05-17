@@ -9,7 +9,7 @@
                 <ColumnDefinition Width="2*"/>
             </Grid.ColumnDefinitions>
         </Grid>
-        <Button Text="Search" Clicked="Search_Clicked"/>
+        <Button Text="Search" Clicked="Search_Clicked" BackgroundColor="Silver"/>
         <ActivityIndicator x:Name="activityIndicator" IsVisible="False"/>
         <ScrollView>
             <Label x:Name="output"/>

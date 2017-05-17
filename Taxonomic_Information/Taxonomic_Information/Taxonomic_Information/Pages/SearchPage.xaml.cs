@@ -26,6 +26,7 @@ namespace Taxonomic_Information
             {
                 var label = new Label { Text = apiItem.placeholderKeyValues[i], FontSize = 18, };
                 var entry = new Entry { WidthRequest = 200, Placeholder = apiItem.placeholderKeyValues[i + 1] };
+                entry.Completed += (sender, e) => Search_Clicked(sender, e);
 
                 grid.Children.Add(label, 0, i);
                 grid.Children.Add(entry, 1, i);
@@ -103,6 +104,13 @@ namespace Taxonomic_Information
                 {
                     var obj = JsonConvert.DeserializeObject(content);
                     content = JsonConvert.SerializeObject(obj, Formatting.Indented);
+                    content = content.Replace("\"", "");
+                    content = content.Replace("[", "");
+                    content = content.Replace("],", "");
+                    content = content.Replace("]", "");
+                    content = content.Replace("{", "");
+                    content = content.Replace("},", "");
+                    content = content.Replace("}", "");
                     output.Text = content;
                 }
                 else
