@@ -14,7 +14,6 @@ namespace Ads.iOS
         public AdInterstitial_iOS()
         {
             LoadAd();
-            interstitial.ScreenDismissed += (s, e) => LoadAd();
         }
 
         void LoadAd()
@@ -30,6 +29,7 @@ namespace Ads.iOS
         {
             if (interstitial.IsReady)
             {
+                interstitial.ScreenDismissed += (s, e) => LoadAd();                        
                 var viewController = UIApplication.SharedApplication.KeyWindow.RootViewController;
                 interstitial.PresentFromRootViewController(viewController);
             }
