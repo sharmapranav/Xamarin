@@ -4,12 +4,17 @@ using Android.Gms.Ads;
 using Ads.Droid;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
+using Android.Content;
 
 [assembly: ExportRenderer(typeof(AdBanner), typeof(AdBanner_Droid))]
 namespace Ads.Droid
 {
     public class AdBanner_Droid : ViewRenderer
     {
+        public AdBanner_Droid(Context context) : base(context)
+        {
+        }
+
         protected override void OnElementChanged(ElementChangedEventArgs<View> e)
         {
             base.OnElementChanged(e);
