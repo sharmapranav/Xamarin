@@ -3,6 +3,7 @@ using Google.MobileAds;
 using Ads.iOS;
 using UIKit;
 using Xamarin.Forms;
+using System.Linq;
 
 [assembly: Dependency(typeof(AdInterstitial_iOS))]
 namespace Ads.iOS
@@ -30,9 +31,21 @@ namespace Ads.iOS
             if (interstitial.IsReady)
             {
                 interstitial.ScreenDismissed += (s, e) => LoadAd();
-                var viewController = UIApplication.SharedApplication.KeyWindow.RootViewController;
-                interstitial.PresentFromRootViewController(viewController);
+                interstitial.PresentFromRootViewController(GetTopViewController());
             }
+        }
+
+        public static UIViewController GetTopViewController()
+        {
+            var window = UIApplication.SharedApplication.KeyWindow;
+            var vc = window.RootViewController;
+            while (vc.PresentedViewController != null)
+                vc = vc.PresentedViewController;
+
+            if (vc is UINavigationController navController)
+                vc = navController.ViewControllers.Last();
+
+            return vc;
         }
     }
 }
