@@ -42,6 +42,7 @@ namespace Ads.UWP
         void LoadAd()
         {
             interstitialAd.RequestAd(AdType.Video, applicationID, adUnitID);
+            //interstitialAd.RequestAd(AdType.Display, applicationID, adUnitID);
         }
 
         public void ShowAd()
